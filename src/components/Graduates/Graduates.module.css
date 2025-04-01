@@ -1,0 +1,17 @@
+.about {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.companies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 60px;
+}
+.companiesCard {
+  padding: 48px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e1e199;
+}

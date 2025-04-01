@@ -4,6 +4,9 @@ import AppLayout from "./layouts/AppLayout";
 import Main from "./components/main/Main";
 import About from "./components/about/About";
 import AppCourses from "./components/courses/AppCourses";
+import WhyUs from "./components/whywe/WheWe";
+import Lessons from "./components/lessons/Lessons";
+import Graduates from "./components/Graduates/Graduates";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
         <Route path="main" element={<Main />} />
         <Route path="about" element={<About />} />
         <Route path="courses" element={<AppCourses />} />
+        <Route path="why-us" element={<WhyUs />} />
+        <Route path="lessons" element={<Lessons />} />
+        <Route path="graduates" element={<Graduates />} />
       </Route>
     </Routes>
   );

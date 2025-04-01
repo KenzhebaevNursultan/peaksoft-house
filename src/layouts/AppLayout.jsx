@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router";
 import styles from "./AppLayout.module.css";
-import logo from "../../src/assets/svg/peaksoftLogo.svg";
+import logo from "../../src/assets/svg/svg.svg";
 
 function AppLayout() {
   return (
