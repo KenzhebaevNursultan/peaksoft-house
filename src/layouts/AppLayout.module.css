@@ -20,14 +20,13 @@
 .navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
   text-align: center;
 }
 .navigation li {
   list-style: none;
-  text-align: right;
-  margin-left: 30px;
-  margin-right: 30px;
+  text-align: center;
   transition: 0.3s linear;
 }
 .navigation li:hover {
@@ -187,13 +186,20 @@
     height: 100%;
     top: 0;
     z-index: 99999;
+    padding-top: 150px;
   }
   .mobileNavigation.open {
     transform: translateX(0);
   }
   .burger.open {
     transform: translateX(0);
-    margin-right: 320px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    border: 1px solid green;
+    padding: 2px;
+    display: flex;
+    align-items: center;
   }
 
   .footerContent {
