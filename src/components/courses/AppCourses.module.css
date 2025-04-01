@@ -2,3 +2,88 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.course {
+  margin-top: 60px;
+  padding: 36px;
+  box-sizing: border-box;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 4px;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(232, 232, 232, 0.4);
+}
+.extra {
+  margin-top: 60px;
+  padding: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.28);
+  background: rgb(7, 56, 86);
+}
+.courseTitle {
+  color: rgb(22, 22, 22);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.courseTitleBlack {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.courseTitle span {
+  color: #707070;
+}
+.courseInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.coursesInfoCard {
+  background: rgba(225, 225, 225, 0.6);
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 101px;
+}
+.coursesInfoCardBack {
+  background: rgb(1, 47, 73);
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 101px;
+}
+.coursesInfoCardText {
+  color: rgb(106, 106, 106);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 10px;
+}
+.coursesInfoCardTextBlack {
+  color: white;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 10px;
+}
+.aboutCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
