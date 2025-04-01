@@ -133,7 +133,7 @@ function Test() {
           <div className={styles.aboutForm}>
             <h1 className={styles.userTitle}>
               {feedback?.lang === "KG"
-                ? `Кайрадан кош келиңиз,${user.name}! Биз сизди тааныйбыз!`
+                ? `Кайрадан кош келиңиз, ${user.name}! Биз сизди тааныйбыз!`
                 : `С возвращением, ${user.name}! Мы вас узнали!`}
             </h1>
             <h2 className={styles.userSubtitle}>
