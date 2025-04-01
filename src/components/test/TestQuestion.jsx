@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router";
 import Container from "../../layouts/Container";
 import Title from "../UI/Title";
 import styles from "./Test.module.css";
@@ -110,6 +111,7 @@ function TestQuestions() {
         {RESULTS[lang].result} {testState.score} / {QUESTIONS[lang].length}
       </p>
       <p className={styles.feedback}>{getFeedback(testState.score, lang)}</p>
+      <NavLink to="/">{lang === "KG" ? "Башкы бет" : "Главная"}</NavLink>
     </div>
   );
 
@@ -121,12 +123,14 @@ function TestQuestions() {
           <button
             className={`${styles.button} ${lang === "RU" && styles.active}`}
             onClick={() => changeLanguage("RU")}
+            disabled={lang === "RU"}
           >
             Русский
           </button>
           <button
             className={`${styles.button} ${lang === "KG" && styles.active}`}
             onClick={() => changeLanguage("KG")}
+            disabled={lang === "KG"}
           >
             Kыргызча
           </button>

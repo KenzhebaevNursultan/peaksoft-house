@@ -3,7 +3,6 @@ import Container from "../../layouts/Container";
 import Title from "../UI/Title";
 import styles from "./Test.module.css";
 import { useNavigate } from "react-router";
-import { FEEDBACKS, RESULTS } from "./TestQuestion";
 
 export const BASE_URL = "https://65a81f64e8b063d1.mokky.dev";
 

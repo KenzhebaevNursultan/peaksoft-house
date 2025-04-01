@@ -47,11 +47,10 @@
   margin-top: 34px;
   transition: 0.2s linear;
 }
-.button:hover {
+.button:hover(:disabled) {
   background: rgb(17, 100, 208);
-  transform: scale(1.01);
 }
-.button:active {
+.button:active(:disabled) {
   opacity: 0.5;
 }
 .aboutForm {
@@ -68,8 +67,9 @@
   display: flex;
   gap: 20px;
 }
-.active {
+.button:disabled {
   background-color: rgb(10, 159, 18);
+  cursor: not-allowed;
 }
 .cont {
   margin-top: 40px;
@@ -188,4 +188,21 @@
     gap: 5px;
     flex-direction: column;
   }
+}
+.result a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px solid white;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 16px 36px;
 }
