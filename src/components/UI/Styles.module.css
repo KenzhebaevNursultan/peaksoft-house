@@ -1,0 +1,10 @@
+.appTitle {
+  background: linear-gradient(216.79deg, rgb(255, 91, 145), rgb(54, 138, 238));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 34px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
