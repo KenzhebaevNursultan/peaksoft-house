@@ -8,6 +8,7 @@ import WhyUs from "./components/whywe/WheWe";
 import Lessons from "./components/lessons/Lessons";
 import Graduates from "./components/Graduates/Graduates";
 import Test from "./components/test/Test";
+import TestQuestions from "./components/test/TestQuestion";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="lessons" element={<Lessons />} />
         <Route path="graduates" element={<Graduates />} />
         <Route path="test" element={<Test />} />
+        <Route path="test/:id" element={<TestQuestions />} />
       </Route>
     </Routes>
   );
