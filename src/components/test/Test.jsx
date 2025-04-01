@@ -83,7 +83,7 @@ function Test() {
   return (
     <div className={styles.about}>
       <Container>
-        <Title title="Катталуу" />
+        <Title title={feedback?.lang === "KG" ? "Катталуу" : "Регистрация"} />
         {!user?.name && !feedback?.feedback ? (
           <form onSubmit={onSubmit} className={styles.aboutForm}>
             <div>
