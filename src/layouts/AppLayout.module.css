@@ -3,8 +3,6 @@
   top: 0;
   width: 100%;
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
   z-index: 999;
   -webkit-box-shadow: 0px 7px 46px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 7px 46px 1px rgba(0, 0, 0, 0.75);
@@ -16,6 +14,8 @@
   width: 1200px;
   margin: 0 auto;
   max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navigation {
   display: grid;
@@ -42,6 +42,29 @@
   text-transform: uppercase;
   transition: 0.1s linear;
   white-space: nowrap;
+}
+.mobileNavigation a {
+  color: rgb(22, 22, 22);
+  font-size: 14px;
+  font-weight: 560;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.1s linear;
+  white-space: nowrap;
+}
+.mobileNavigation li {
+  list-style: none;
+  text-align: center;
+  transition: 0.3s linear;
+  margin-top: 30px;
+}
+
+.mobileNavigation li:hover {
+  color: rgb(0, 82, 188);
+  transform: scale(1.1);
 }
 
 .navigation li:hover {
@@ -113,4 +136,75 @@
 }
 .nav img {
   cursor: pointer;
+}
+/* nav */
+
+.burger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileNavigation {
+  display: none;
+}
+@media (max-width: 768px) {
+  .extraClass {
+    background: #085e7a;
+    color: white;
+  }
+  .navigation {
+    display: none;
+  }
+  .headerClass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+  .nav {
+    width: 100%;
+    padding: 12px 16px;
+  }
+  .mobileNavigation {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    flex-direction: column;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
+  }
+  .mobileNavigation.open {
+    transform: translateX(0);
+  }
+  .burger.open {
+    transform: translateX(0);
+    margin-right: 320px;
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .reserved {
+    text-align: center;
+  }
 }

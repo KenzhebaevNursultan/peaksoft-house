@@ -11,7 +11,7 @@ function About() {
         <div className={styles.about}>
           <Title title="Биз жөнүндө" />
           <div className={styles.aboutContent}>
-            <div>
+            <div className={styles.aboutText}>
               <p>
                 <span>PeakSoft House</span> - бул PeakSoft IT компаниясынын
                 онлайн жана офлайн окутуу курстары. Биз талап кылынган{" "}

@@ -13,7 +13,11 @@ function Main() {
       <Container>
         <div className={styles.wrapper}>
           <h1>
-            <img src={peaksoftSvg} alt="peaksoft-house" />
+            <img
+              className={styles.peak}
+              src={peaksoftSvg}
+              alt="peaksoft-house"
+            />
           </h1>
           <div className={styles.computerImage}>
             <img src={circle} alt="peaksoft-computer" />
