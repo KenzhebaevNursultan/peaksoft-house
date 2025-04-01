@@ -1,26 +1,16 @@
-import styles from "./Main.module.css";
-import peaksoftSvg from "../../assets/svg/peaksoft.svg";
-// import computer from "../../assets/svg/computer.svg";
-import circle from "../../assets/svg/cicle.svg";
-import Container from "../../layouts/Container";
-import inst from "../../assets/icons/inst.svg";
-import tele from "../../assets/icons/telegram.svg";
-import whatsapp from "../../assets/icons/whatsapp.svg";
+import Container from "./Container";
+import styles from "./AppLayout.module.css";
+import logo from "../../src/assets/svg/peak.svg";
+import inst from "../../src/assets/icons/inst.svg";
+import tele from "../../src/assets/icons/telegram.svg";
+import whatsapp from "../../src/assets/icons/whatsapp.svg";
 
-function Main() {
+function Footer() {
   return (
-    <div className={styles.container}>
+    <footer className={styles.footer}>
       <Container>
-        <div className={styles.wrapper}>
-          <h1>
-            <img src={peaksoftSvg} alt="peaksoft-house" />
-          </h1>
-          <div className={styles.computerImage}>
-            <img src={circle} alt="peaksoft-computer" />
-          </div>
-        </div>
-
-        <div className={styles.mainAddress}>
+        <div className={styles.footerContent}>
+          <img src={logo} alt="peaksoft" />
           <div className={styles.address}>
             <ul className={styles.addressList}>
               <li>
@@ -59,9 +49,12 @@ function Main() {
             </ul>
           </div>
         </div>
+        <p className={styles.reserved}>
+          © Copyright PeakSoft. All Rights Reserved
+        </p>
       </Container>
-    </div>
+    </footer>
   );
 }
 
-export default Main;
+export default Footer;

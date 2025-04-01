@@ -28,3 +28,46 @@
     transform: rotate(360deg);
   }
 }
+
+.addressList {
+  list-style-type: none;
+}
+.socialList {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.addressList li {
+  margin-top: 18px;
+}
+.addressList a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+.addressList a:hover {
+  color: rgb(164, 176, 193);
+  transform: scale(1.1);
+}
+.socialList li {
+  list-style-type: none;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.socialList li:hover {
+  background: rgba(255, 255, 255, 0.292);
+}
+.mainAddress {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}

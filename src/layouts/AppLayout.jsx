@@ -1,14 +1,18 @@
-import { NavLink, Outlet } from "react-router";
+import { NavLink, Outlet, useLocation } from "react-router";
 import styles from "./AppLayout.module.css";
 import logo from "../../src/assets/svg/svg.svg";
+import Footer from "./Footer";
 
 function AppLayout() {
+  const { pathname } = useLocation();
   return (
     <div>
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div>
-            <img src={logo} alt="peaksoft-logo" />
+            <NavLink to="/">
+              <img src={logo} alt="peaksoft-logo" />
+            </NavLink>
           </div>
           <ul className={styles.navigation}>
             <li>
@@ -77,6 +81,7 @@ function AppLayout() {
       <main>
         <Outlet />
       </main>
+      {pathname !== "/main" && <Footer />}
     </div>
   );
 }
