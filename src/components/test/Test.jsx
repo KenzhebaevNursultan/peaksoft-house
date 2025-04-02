@@ -10,6 +10,7 @@ function Test() {
   const [phone, setPhone] = useState("+996");
   const [name, setSetname] = useState("");
   const [surname, setSurname] = useState("");
+  const [parents, setParents] = useState("+996");
   const [user, setUser] = useState(null);
   const [feedback, setFeedback] = useState("");
 
@@ -29,6 +30,10 @@ function Test() {
     setSurname(e.target.value);
   };
 
+  const handleParentsChange = (e) => {
+    setParents(e.target.value);
+  };
+
   const onSubmit = async (e) => {
     e.preventDefault();
     const newStudent = {
@@ -36,6 +41,7 @@ function Test() {
       phone: phone,
       surname: surname,
       answer: "",
+      parents: parents,
     };
     const response = await fetch(`${BASE_URL}/kemin`, {
       method: "POST",
@@ -87,7 +93,7 @@ function Test() {
         {!user?.name && !feedback?.feedback ? (
           <form onSubmit={onSubmit} className={styles.aboutForm}>
             <div>
-              <label className={styles.label} htmlFor="">
+              <label className={styles.label} htmlFor="id1">
                 Атыңыз*
               </label>
               <input
@@ -95,12 +101,13 @@ function Test() {
                 className={styles.input}
                 placeholder="Атыңыз"
                 required
+                id="id1"
                 value={name}
                 onChange={handleNameChange}
               />
             </div>
             <div>
-              <label className={styles.label} htmlFor="">
+              <label className={styles.label} htmlFor="id2">
                 Фамилияңыз *
               </label>
               <input
@@ -110,10 +117,11 @@ function Test() {
                 required
                 value={surname}
                 onChange={handleSurnameChange}
+                id="id2"
               />
             </div>
             <div>
-              <label className={styles.label} htmlFor="">
+              <label className={styles.label} htmlFor="id3">
                 Байланышуу тел *
               </label>
               <input
@@ -123,6 +131,21 @@ function Test() {
                 required
                 value={phone}
                 onChange={handleInputChange}
+                id="id1"
+              />
+            </div>
+            <div>
+              <label className={styles.label} htmlFor="id5">
+                Ата-эненин номери *
+              </label>
+              <input
+                type="tel"
+                id="id5"
+                className={styles.input}
+                placeholder="+___ (___) __ __ __"
+                required
+                value={parents}
+                onChange={handleParentsChange}
               />
             </div>
             <button className={styles.button} type="submit">
